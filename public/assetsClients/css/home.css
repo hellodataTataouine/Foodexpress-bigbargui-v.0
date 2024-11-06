@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #800020;
+  padding: 10px;
+  text-align: right;
+  font-size: 35px;
+  color: white;
+  width: 100%;
+  height: 10vh;
+}
+
+/* Style the logo */
+header img {
+  height: 50px; /* Adjust height as needed */
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 90vh; /* only for demonstration, should be removed */
+
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+
+    float: left;
+    width: 70%;
+    height: 90vh;
+
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  article{
+    width: 100%;
+    height: 80vh;
+  }
+}
+.geolocation-icon {
+  margin-right: 5px; /* Adjust spacing as needed */
+  color: #222423;
+
+}
+.geolocation-icon:hover{
+    cursor: pointer;
+    color: #800020;
+}
+
+/* Style the input */
+#address-input {
+  width: calc(100% - 30px); /* Adjust width as needed */
+}
+
+/* Container to hold the icon and input */
+.icon-input-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.delivery-method-btn {
+  cursor: pointer;
+  border: 1px solid #141310;
+  border-radius: 15px; /* Adjust the border-radius to make it more rounded */
+  padding: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+}
+
+.delivery-method-btn.active {
+  background-color: #800020;
+  color: #fff;
+  border-color: #af191b;
+}
+
+.switchable-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+.btn-custom {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+	background-color: #222423;
+  line-height: 24px;
+  border: 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 12px 30px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+  text-transform: uppercase;
+  border-radius: 25px;
+  z-index: 1;
+  -webkit-box-shadow: 4px 3px 24px rgba(237, 78, 83, .5);
+          box-shadow: 4px 3px 24px rgba(237, 78, 83, .5);
+}
+.btn-custom::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #800020;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  z-index: -1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+.btn-custom:hover::before,
+.btn-custom:focus::before{
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.btn-custom:hover,
+.btn-custom:focus{
+  color: #fff;
+  outline: none;
+}
+
+/* Autocomplete */
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: max-content;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.ui-autocomplete .ui-menu-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.ui-autocomplete .ui-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus:hover {
+  background-color: #0056b3;
+}
+
+.ui-autocomplete .ui-helper-hidden-accessible {
+  display: none;
+}
+ul {
+  list-style-type: none;
+}
