@@ -13,7 +13,7 @@
     <meta name="language" content="{{ $seo->language }}">
     <meta property="og:image" content="uploads/seo/{{ $seo->image}}">
     <meta name="author" content="cipherlink">
-    <link rel="icon" type="image/x-icon" href="images/img/bigtime-icon.png">
+    <link rel="icon" type="image/x-icon" href="images/img/bigbargui.png">
 </head>
 <body>
 
@@ -75,7 +75,7 @@
       <div class="auth-description bg-cover bg-center dark-overlay dark-overlay-2" style="background-image: url(&quot;https://foodexpress.site/uploads//reservationbanner.png?v=v2.7.0&quot;);">
         <div class="auth-description-inner">
           <i class="fa fa-table"></i>
-          <h2>Big Time F Reservation!</h2>
+          <h2>Big Bargui Reservation!</h2>
                  <p>Réservez une table et profitez d'une expérience culinaire exceptionnelle dans notre restaurant. Choisissez le nombre de personnes, l'heure, la date, et découvrez nos tables disponibles.</p>
 
         </div>

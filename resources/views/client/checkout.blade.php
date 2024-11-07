@@ -13,8 +13,8 @@
     <meta property="og:image" content="uploads/seo/{{ $seo->image}}">
   <meta name="author" content="cipherlink">
 
-  <title>Big Time F</title>
-  <link rel="icon" type="image/x-icon" href="images/img/bigtime-icon.png">
+  <title>Big Bargui</title>
+  <link rel="icon" type="image/x-icon" href="images/img/bigbargui.png">
   <link rel="stylesheet" href="{{ asset('vendors/mdi/css/materialdesignicons.min.css') }}">
   <style>
     .switchable-list {

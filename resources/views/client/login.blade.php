@@ -13,8 +13,8 @@
     <meta property="og:image" content="uploads/seo/{{ $seo->image}}">
   <meta name="author" content="cipherlink">
 
-  <title>Big Time F | Se connecter</title>
-  <link rel="icon" type="image/x-icon" href="images/img/bigtime-icon.png">
+  <title>Big Bargui | Se connecter</title>
+  <link rel="icon" type="image/x-icon" href="images/img/bigbargui.png">
 </head>
 <body>
   @include('client.layouts.top_menu_client')

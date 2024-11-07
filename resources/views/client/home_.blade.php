@@ -17,7 +17,7 @@
 </style>
 <header>
     <div class="logo">
-        <img src="images/img/bigtime.png" alt="Logo">
+        <img src="images/img/bigbargui.png" alt="Logo">
     </div>
 
 </header>

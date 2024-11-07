@@ -209,7 +209,7 @@
 		<br>
 		<br>
 		<br>
-      <h1 class="title">Bienvenue chez Big Time F</h1>
+      <h1 class="title">Bienvenue chez Big Bargui</h1>
       <p class="subtitle">
 
         Nous sommes heureux de vous accueillir dans notre établissement, où notre cuisine variée et traditionnelle est élaborée pour satisfaire tous les palais et toutes les envies.
